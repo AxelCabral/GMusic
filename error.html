@@ -1,0 +1,39 @@
+<div id="wrapper" data-scrollable="true" style="height: 100vh">
+    <div class="d-flex align-items-center justify-content-center h-100">
+        <div class="text-center px-3">
+            <h1 class="display-2" style="color: white;">Opa!</h1>
+            <p style="color: white;">Parece que você precisa estar logado para acessar essa página ou função.</p>
+            <a href="#" class="load-page btn btn-pill btn-air btn-brand"
+            id='error-btn'><span>Fazer Login</span></a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Botão que volta para home
+
+        $("#error-btn").click(function(e){
+            e.preventDefault();
+
+            var a = $(this).find("span").text();
+
+            if(a == "Fazer Login"){
+                $("#loading").css("display", "inherit");
+            // Exibir página de Login
+                $.ajax({
+                    url: 'login.php',
+                    success: function(data)
+                    {
+                        $("a").not(this).removeClass("active");
+                        $("#1").addClass("active");
+                        $("#loading").delay(150).fadeOut();
+                        $(".insert").html(data);
+                        $("title").html("GMusic | Login");
+                    }
+                });
+            }
+        });
+    });
+</script>

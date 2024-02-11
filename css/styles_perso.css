@@ -1,0 +1,211 @@
+.albums{
+    width: 100%;
+    display: inline-flex;
+    max-width: 100%;
+    height: 38vh;
+}
+.album{
+    width: 18.5%;
+    height: 4rem;
+    display: block;
+    margin-top: 2%;
+    position: relative;
+    margin-left: 2%;
+    min-width: 18%;
+    max-width: 18.5%;
+}
+.artist_album{
+    width: 18.5%;
+    height: 4rem;
+    display: block;
+    margin-top: 2%;
+    position: relative;
+    margin-left: 2%;
+    min-width: 18%;
+    max-width: 18.5%;
+}
+.artist_album img{
+    border-radius: 1.5rem;
+    min-height: 28vh;
+    max-height: 28vh;
+}
+.album img {
+    border-radius: 1.5rem;
+    min-height: 28vh;
+    max-height: 28vh;
+}
+.album img:hover{
+    opacity: 0.7;
+}
+.album_name {
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 8%;
+}
+.artist_name {
+    font-size: 15px;
+    margin-top: 1%;
+    margin-left: 10%;
+}
+.page_title {
+    font-size: 35px;
+    margin-top: 2%;
+}
+footer {
+    margin: 1em;
+    text-align: center;
+    margin-top: 5em;
+}
+.message {
+    font-size: 19px;
+    text-align: center;
+    width: 118%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.message p{
+    margin-top: 3%;
+}
+.login-option{
+    text-align: center;
+    margin-left: 46%;
+    margin-bottom: 0.5%;
+    margin-right: 0.3%;
+}
+.artist-options{
+    text-align: center;
+}
+.album_date{
+    float: right;
+}
+.delete-button{
+    color: red !important;
+    background-color: white; 
+    padding: 5px; 
+    border-radius: 10px; 
+    float: right;
+}
+.add-button{
+    color: rgb(17, 144, 202) !important;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    float: right;
+}
+.popup-overlay{
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playlist-options-popup{
+    background: #b15d5d;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+}
+.btn-close-playlist-options{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #bbbbbb;
+    transition: .3s ease all;
+}
+.popup-overlay select{
+    max-width: 30%;
+    min-width: 25%;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    padding: 3px;
+    border-radius: 4px;
+}
+.popup-overlay input[type='submit']{
+    padding: 0 20px;
+    padding: 8px;
+    border: none;
+    color: #fff;
+    background: rgb(98, 24, 24);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3;
+    margin-left: 10px;
+}
+.popup-overlay input[type='submit']:hover{
+    background: rgb(177, 26, 26);
+}
+.span-color-profile {
+    color: #fff;
+}
+#row-profile {
+    margin-left: 0%;
+}
+.profile-title {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    text-align: center;
+}
+.list-link{
+    color: #fff !important;
+}
+.big-card-artist{
+    min-height: 17rem;
+    max-height: 17rem;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+}
+.play-button{
+    position: absolute;
+    margin-top: -14rem;
+}
+.principal-image:hover{
+    opacity: 0.3;
+}
+.queue-cleaner img{
+    height: 45px;
+    width: auto;
+    z-index: 5;
+    position: fixed;
+    margin-top: 43.5%;
+    margin-left: 84%;
+}
+.queue-cleaner{
+    width: 100%;
+    height: 50px;
+    align-items: right;
+    position: absolute;
+}
+.queue-cleaner img:hover{
+    cursor: pointer;
+}
+.play-songs img:hover{
+    cursor: pointer;
+}
+.play-songs img{
+    width: 3.3%;
+    height: 39px;
+    float: right;
+    margin-top: -4%;
+}
